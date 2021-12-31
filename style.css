@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(226, 226, 226);
+}
+header {
+    
+    background: #ffffff;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 0px 3px rgb(206, 204, 204); 
+    margin-bottom: 25px;
+}
+
+header img {
+    margin-top: -20px;
+    height: 11rem;
+}
+nav {
+    margin-top: -30px;
+}
+header nav a {
+    
+    display: block;
+    color: rgb(165, 54, 165);
+    font-size: 24px;
+    text-decoration: none;
+    font-family: arial;
+    line-height: 46px;    
+}
+main {
+    
+    margin: 1rem;
+    border-radius: 7px;
+    padding: 1rem;
+    margin-right: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 3px rgb(206, 204, 204);
+    
+
+} 
+main h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    font-family: Arial;
+    color: #63686d;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    
+
+}
+main table {
+    
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    color: grey;
+    
+    
+    
+}
+main table th,
+main table td {
+    font-family: arial;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(216, 215, 215);
+    padding: 15px;
+    text-align: left;
+    color: #63686d;
+    
+}
+
+footer {
+    color: rgb(107, 107, 107);
+    text-align: center;
+}
+span {
+   
+    animation: span 3s ease-in infinite alternate;
+}
+@media  (min-width: 600px) {
+    .desktop {
+        width: 750px;
+        margin: 0 auto;
+    }
+    header {
+        padding: 0;
+    }
+    
+    header .desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    header nav a {
+        display:inline-block;
+        padding: 4px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    header img {
+        margin-top: 0;
+        width: 89px;
+        height: 90px;
+    }
+    .letter{
+	display: inline-flex;
+	animation: letter 3s ease-in-out infinite alternate;
+}
+@keyframes span {
+	
+	50%,100%{ margin: 10px; }
+    100%,30%{ margin: 0; 5px; }
+    
+}
+@keyframes letter {
+	0%,30%{ width: 8px; }
+    70%,100%{ width: 15vw; }    
+}
+
